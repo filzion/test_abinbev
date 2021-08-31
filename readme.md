@@ -39,10 +39,8 @@ on Linux:
 ```
 'google-chrome --remote-debugging-port=9222 --user-data-dir="~/any/path/ChromeProfile"
 ```
-<br>
-* `--remote-debugging-port=9222` This will open the browser on port 9222, where the webdriver will be listening and be able to take control of the session when the test runs.
-<br>
-* `--user-data-dir="~/any/path/ChromeProfile"` this will create a new ChromeProfile in the path provided. This is needed so Chrome will open as if it was the first time it is being used.
+`--remote-debugging-port=9222` This will open the browser on port 9222, where the webdriver will be listening and be able to take control of the session when the test runs.
+ `--user-data-dir="~/any/path/ChromeProfile"` this will create a new ChromeProfile in the path provided. This is needed so Chrome will open as if it was the first time it is being used.</p>
 
 By opening Google Chrome this way the browser won't know it is beeing controlled by a computer when selenium takes over the session and the captcha will not show up.
 
